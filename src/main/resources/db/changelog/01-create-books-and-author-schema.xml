@@ -6,32 +6,50 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <changeSet id="01" author="hhimanshu">
-        <createTable tableName="books"
-                     remarks="A table to contain all books">
-            <column name="id" type="int" autoIncrement="true">
+    <changeSet id="01" author="admin">
+        <createTable tableName="auction"
+                     remarks="A table to contain all auctions">
+            <column name="itemid" type="int" autoIncrement="true">
                 <constraints nullable="false" unique="true" primaryKey="true"/>
             </column>
-            <column name="name" type="varchar(255)">
-                <constraints nullable="false" unique="true"/>
-            </column>
-            <column name="author" type="int">
+            <column name="itemcode" type="varchar(255)">
                 <constraints nullable="false"/>
+            </column>
+            <column name="baseprice" type="int">
+                <constraints nullable="false" />
+            </column>
+            <column name="status" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="versionId" type="int">
+                <constraints nullable="false" />
             </column>
         </createTable>
 
-        <createTable tableName="authors"
-                     remarks="A table to contain all the authors">
+        <createTable tableName="user"
+                     remarks="A table to contain all the user">
             <column name="id" type="int" autoIncrement="true">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="name" type="varchar(100)">
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="varchar(100)">
                 <constraints nullable="false"/>
             </column>
         </createTable>
 
-        <addForeignKeyConstraint baseTableName="books" baseColumnNames="author"
-                                 constraintName="author_fk"
-                                 referencedTableName="authors" referencedColumnNames="id"/>
+
+    </changeSet>
+
+    <changeSet author="akhilesh" id="itemid_versionid">
+        <addUniqueConstraint
+                columnNames="itemid, versionId"
+                constraintName="itemid_versionid"
+                tableName="auction"
+        />
     </changeSet>
 </databaseChangeLog>

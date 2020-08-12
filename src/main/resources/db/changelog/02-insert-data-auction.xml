@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="02" author="akhilesh">
+        <comment>Inserting Auctions</comment>
+        <insert tableName="auction">
+            <column name="itemcode" value="APsqA123"/>
+            <column name="baseprice" valueNumeric="2000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="BPsqA123"/>
+            <column name="baseprice" valueNumeric="3000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="CsqA123"/>
+            <column name="baseprice" valueNumeric="3000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="sdfdsfs"/>
+            <column name="baseprice" valueNumeric="45000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="231sxcsc"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="sdfdse23"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="kjxcgsjk"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="emn23"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="sdkjbcs89"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="jm1wm"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="3msd12"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+        <insert tableName="auction">
+            <column name="itemcode" value="scvs9scs"/>
+            <column name="baseprice" valueNumeric="23000"/>
+            <column name="status" value="RUNNING"/>
+            <column name="versionId" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

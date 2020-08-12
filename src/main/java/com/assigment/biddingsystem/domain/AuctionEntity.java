@@ -1,10 +1,12 @@
 package com.assigment.biddingsystem.domain;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Version;
 
 @Entity
 @Table(name="AUCTION")
@@ -29,9 +31,10 @@ public class AuctionEntity {
     @Column(name="status")
     private String status;
 
+    @Version
+    @Column(name="VERSION")
+    private Integer version;
 
-    @Column(name="versionid")
-    private int versionId;
 
     public Long getItemid() {
         return itemid;
@@ -81,11 +84,5 @@ public class AuctionEntity {
         this.status = status;
     }
 
-    public int getVersionId() {
-        return versionId;
-    }
 
-    public void setVersionId(int versionId) {
-        this.versionId = versionId;
-    }
 }

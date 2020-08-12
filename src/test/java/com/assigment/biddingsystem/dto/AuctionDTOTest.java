@@ -20,7 +20,6 @@ public class AuctionDTOTest {
         auctionEntity.setBidPrice(0);
         auctionEntity.setStepRate(100);
         auctionEntity.setStatus(AuctionStatus.RUNNING.getStatus());
-        auctionEntity.setVersionId(1);
 
 
         AuctionDTO auctionDTO = modelMapper.map(auctionEntity,AuctionDTO.class);

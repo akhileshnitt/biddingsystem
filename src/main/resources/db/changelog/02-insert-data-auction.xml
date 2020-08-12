@@ -14,7 +14,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="BPsqA123"/>
@@ -22,7 +22,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="CsqA123"/>
@@ -30,7 +30,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="sdfdsfs"/>
@@ -38,7 +38,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="231sxcsc"/>
@@ -46,7 +46,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="sdfdse23"/>
@@ -54,7 +54,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="kjxcgsjk"/>
@@ -62,7 +62,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="emn23"/>
@@ -70,7 +70,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="sdkjbcs89"/>
@@ -78,7 +78,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="jm1wm"/>
@@ -86,7 +86,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="3msd12"/>
@@ -94,7 +94,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
         <insert tableName="auction">
             <column name="itemCode" value="scvs9scs"/>
@@ -102,7 +102,7 @@
             <column name="bidPrice" valueNumeric="0"/>
             <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
-            <column name="versionId" valueNumeric="1"/>
+            
         </insert>
     </changeSet>
 </databaseChangeLog>

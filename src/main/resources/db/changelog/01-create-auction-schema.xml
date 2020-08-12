@@ -27,9 +27,11 @@
             <column name="status" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="versionId" type="int">
-                <constraints nullable="false" />
+            <column name="VERSION" type="int" defaultValue="0">
+
             </column>
+
+
         </createTable>
 
         <createTable tableName="user"
@@ -51,11 +53,5 @@
 
     </changeSet>
 
-    <changeSet author="akhilesh" id="itemid_versionid">
-        <addUniqueConstraint
-                columnNames="itemid, versionId"
-                constraintName="itemid_versionid"
-                tableName="auction"
-        />
-    </changeSet>
+
 </databaseChangeLog>

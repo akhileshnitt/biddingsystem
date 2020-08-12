@@ -9,13 +9,19 @@
     <changeSet id="01" author="admin">
         <createTable tableName="auction"
                      remarks="A table to contain all auctions">
-            <column name="itemid" type="int" autoIncrement="true">
+            <column name="itemId" type="int" autoIncrement="true">
                 <constraints nullable="false" unique="true" primaryKey="true"/>
             </column>
-            <column name="itemcode" type="varchar(255)">
+            <column name="itemCode" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="baseprice" type="int">
+            <column name="basePrice" type="int">
+                <constraints nullable="false" />
+            </column>
+            <column name="bidPrice" type="int">
+                <constraints nullable="false" />
+            </column>
+            <column name="stepRate" type="int">
                 <constraints nullable="false" />
             </column>
             <column name="status" type="varchar(255)">

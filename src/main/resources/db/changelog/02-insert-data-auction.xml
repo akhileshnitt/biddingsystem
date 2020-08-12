@@ -9,74 +9,98 @@
     <changeSet id="02" author="akhilesh">
         <comment>Inserting Auctions</comment>
         <insert tableName="auction">
-            <column name="itemcode" value="APsqA123"/>
-            <column name="baseprice" valueNumeric="2000"/>
+            <column name="itemCode" value="APsqA123"/>
+            <column name="basePrice" valueNumeric="2000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="BPsqA123"/>
-            <column name="baseprice" valueNumeric="3000"/>
+            <column name="itemCode" value="BPsqA123"/>
+            <column name="basePrice" valueNumeric="3000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="CsqA123"/>
-            <column name="baseprice" valueNumeric="3000"/>
+            <column name="itemCode" value="CsqA123"/>
+            <column name="basePrice" valueNumeric="3000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="sdfdsfs"/>
-            <column name="baseprice" valueNumeric="45000"/>
+            <column name="itemCode" value="sdfdsfs"/>
+            <column name="basePrice" valueNumeric="45000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="231sxcsc"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="231sxcsc"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="sdfdse23"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="sdfdse23"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="kjxcgsjk"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="kjxcgsjk"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="emn23"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="emn23"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="sdkjbcs89"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="sdkjbcs89"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="jm1wm"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="jm1wm"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="3msd12"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="3msd12"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>
         <insert tableName="auction">
-            <column name="itemcode" value="scvs9scs"/>
-            <column name="baseprice" valueNumeric="23000"/>
+            <column name="itemCode" value="scvs9scs"/>
+            <column name="basePrice" valueNumeric="23000"/>
+            <column name="bidPrice" valueNumeric="0"/>
+            <column name="stepRate" valueNumeric="100"/>
             <column name="status" value="RUNNING"/>
             <column name="versionId" valueNumeric="1"/>
         </insert>

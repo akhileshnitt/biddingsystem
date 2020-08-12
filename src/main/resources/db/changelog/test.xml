@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<changeSet id="02" author="akhilesh">
+    <comment>Inserting Auctions</comment>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="101"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="2000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="102"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="3000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="103"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="3000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="104"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="45000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="105"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="106"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="107"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="108"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="109"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="110"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="111"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+    <insert tableName="auction">
+        <column name="itemid" valueNumeric="112"/>
+        <column name="itemcode" value="APsqA123"/>
+        <column name="baseprice" valueNumeric="23000"/>
+        <column name="status" value="RUNNING"/>
+        <column name="versionId" valueNumeric="1"/>
+    </insert>
+</changeSet>
+</databaseChangeLog>

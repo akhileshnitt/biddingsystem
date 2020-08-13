@@ -22,7 +22,7 @@ Oauth2
     
      
      2. pass access token to placeBid Api
-     <img src="https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.42.37%20PM.png" alt="drawing" width="1000" height="300"/>
+     <img src="https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.48.20%20PM.png" alt="drawing" width="1000" height="300"/>
 
 
 4. Optimistic locking to work in distributed env

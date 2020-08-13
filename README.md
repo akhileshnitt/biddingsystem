@@ -14,7 +14,7 @@ http://localhost:8080/auctions?pageSize=5&pageNo=0
 
 
 Oauth2
-1. http://localhost:8080/api/v1/auctions ,  This Api does not need authentication
+1. http://localhost:8080/api/v1/auctions ,  This Api does not need authentication</br>
 2.http://localhost:8080/api/v1/placeBid , This Api needs authentication
    Steps :
      1. generate bearer token

@@ -18,7 +18,7 @@ Oauth2
 2.http://localhost:8080/api/v1/placeBid , This Api needs authentication
    Steps :
      1. generate bearer token
-     <img src="https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.05.27%20PM.png" alt="drawing" width="1000" height="300"/>
+     <img src="https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.39.51%20PM.png" alt="drawing" width="1000" height="300"/>
     
      
      2. pass access token to placeBid Api

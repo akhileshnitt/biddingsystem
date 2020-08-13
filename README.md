@@ -7,6 +7,7 @@ The Buidding System
 
 Auction API:
 http://localhost:8080/auctions
+![alt text](screenshots/filename.png "Description goes here")
 http://localhost:8080/auctions?pageSize=5&pageNo=0
 http://localhost:8080/auctions?pageSize=5&pageNo=1
 

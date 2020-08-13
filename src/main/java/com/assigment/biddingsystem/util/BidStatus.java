@@ -5,7 +5,8 @@ import org.springframework.http.HttpStatus;
 public enum BidStatus {
     ACCEPTED("Bid is accepted", HttpStatus.OK),
     NOTFOUND("Auction not found",HttpStatus.NOT_FOUND),
-    REJECTED("Bid is rejected",HttpStatus.NOT_ACCEPTABLE);
+    REJECTED("Bid is rejected",HttpStatus.NOT_ACCEPTABLE),
+    ERROR_PROCESSING("Error in processing Bid",HttpStatus.INTERNAL_SERVER_ERROR);
 
     private String reason;
     private HttpStatus code;

@@ -9,6 +9,9 @@ import com.assigment.biddingsystem.util.BidStatus;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,7 +23,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
-public class AuctionController {
+@EnableResourceServer
+public class AuctionController extends ResourceServerConfigurerAdapter {
 
 
     private AuctionService auctionService;
@@ -50,4 +54,19 @@ public class AuctionController {
         return new ResponseEntity<>(bidStatus.getReason(), new HttpHeaders(), bidStatus.getCode());
 
     }
+
+
+    @Override
+    public void configure(HttpSecurity http) throws Exception {
+        http
+                .authorizeRequests().antMatchers("/oauth/token", "/oauth/authorize**", "/api/v1/auctions").permitAll();
+//			 .anyRequest().authenticated();
+        http.requestMatchers().antMatchers("/api/v1/placeBid")
+                .and().authorizeRequests()
+                .antMatchers("/api/v1/placeBid").access("hasRole('USER')")
+                .and().requestMatchers().antMatchers("/admin")
+                .and().authorizeRequests()
+                .antMatchers("/admin").access("hasRole('ADMIN')");
+    }
+
 }

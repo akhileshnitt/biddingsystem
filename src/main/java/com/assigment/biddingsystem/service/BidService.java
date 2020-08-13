@@ -5,10 +5,10 @@ import com.assigment.biddingsystem.dto.BidRequest;
 import com.assigment.biddingsystem.util.BidStatus;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.OptimisticLockException;
+
 @Service
 public class BidService {
-
-
 
     private BidHandler bidHandler;
 
@@ -30,13 +30,13 @@ public class BidService {
         try {
             bidHandler.persisBid(auctionEntity,bidRequest);
             return BidStatus.ACCEPTED;
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (OptimisticLockException e) {
+            return BidStatus.REJECTED;
+        } catch(Exception e){
+            System.out.println("Error in processing bid request");
+            return BidStatus.ERROR_PROCESSING;
         }
-        return null;
-    }
 
-    private void persisBid(AuctionEntity auctionEntity, BidRequest bidRequest) throws Exception{
     }
 
     private boolean isValidBid(AuctionEntity auctionEntity, BidRequest bidRequest) {

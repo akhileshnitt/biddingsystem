@@ -7,9 +7,9 @@ The Buidding System
 
 Auction API:
 http://localhost:8080/auctions
-![drawing](https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.04.37%20PM.png "Description goes here")
+![drawing](https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.04.37%20PM.png "Description goes here"){ width=50% }
 http://localhost:8080/auctions?pageSize=5&pageNo=0
-![alt text](https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.05.27%20PM.png)
+![drawing](https://github.com/akhileshnitt/biddingsystem/blob/master/screen/Screen%20Shot%202020-08-13%20at%2012.05.27%20PM.png){ width=50% }
 
 
 

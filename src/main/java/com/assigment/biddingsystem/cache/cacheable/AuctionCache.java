@@ -1,42 +1,27 @@
-package com.assigment.biddingsystem.domain;
+package com.assigment.biddingsystem.cache.cacheable;
 
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Version;
 import java.io.Serializable;
 
-@Entity
-@Table(name="AUCTION")
-public class AuctionEntity implements Serializable {
+public class AuctionCache implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long itemid;
-
-    @Column(name="itemcode")
     private String itemCode;
-
-    @Column(name="baseprice")
     private int basePrice;
-
-    @Column(name="bidprice")
     private int bidPrice;
-
-    @Column(name="steprate")
     private int stepRate;
-
-    @Column(name="status")
     private String status;
-
-    @Version
-    @Column(name="VERSION")
     private Integer version;
 
+
+    public AuctionCache(Long itemid, String itemCode, int basePrice, int bidPrice, int stepRate, String status, Integer version) {
+        this.itemid = itemid;
+        this.itemCode = itemCode;
+        this.basePrice = basePrice;
+        this.bidPrice = bidPrice;
+        this.stepRate = stepRate;
+        this.status = status;
+        this.version = version;
+    }
 
     public Long getItemid() {
         return itemid;
@@ -86,5 +71,11 @@ public class AuctionEntity implements Serializable {
         this.status = status;
     }
 
+    public Integer getVersion() {
+        return version;
+    }
 
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
 }

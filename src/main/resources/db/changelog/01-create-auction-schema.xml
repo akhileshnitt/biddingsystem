@@ -36,7 +36,7 @@
 
         <createTable tableName="user"
                      remarks="A table to contain all the user">
-            <column name="id" type="int" autoIncrement="true">
+            <column name="userId" type="int" autoIncrement="true">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
             <column name="name" type="varchar(255)">
@@ -49,6 +49,21 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
+
+        <createTable tableName="bidinfo"
+                     remarks="A table to contain all the bid information">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="itemId" type="int">  </column>
+            <column name="userName" type="varchar(255)">  </column>
+            <column name="bidPrice" type="int">  </column>
+
+
+        </createTable>
+
+
+
 
 
     </changeSet>

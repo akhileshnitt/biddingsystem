@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  redis_db:
+    image: redis
+    # only needed to directly access Redis from host
+    ports:
+      - 6379:6379

@@ -21,8 +21,8 @@ public class AuctionEntityTest {
 
     private AuctionEntity getAuction2() {
         AuctionEntity auctionEntity = auctionRepository.findById(new Long(1)).get();
-        // suppose the value of wallet1.getVirtualBalance() is 1000
-        auctionEntity.setBidPrice(auctionEntity.getBidPrice() + 300); // After evaluating this line it becomes 1100
+
+        auctionEntity.setBidPrice(auctionEntity.getBidPrice() + 300);
         System.out.println(Thread.currentThread().getId());
         return auctionEntity;
     }
@@ -30,8 +30,8 @@ public class AuctionEntityTest {
     @Transactional(isolation = Isolation.SERIALIZABLE)
     private AuctionEntity getAuction1() {
         AuctionEntity auctionEntity = auctionRepository.findById(new Long(1)).get();
-        // suppose the value of wallet1.getVirtualBalance() is 1000
-        auctionEntity.setBidPrice(auctionEntity.getBidPrice() + 100); // After evaluating this line it becomes 1100
+
+        auctionEntity.setBidPrice(auctionEntity.getBidPrice() + 100);
         auctionRepository.save(auctionEntity);
         System.out.println(Thread.currentThread().getId());
         return auctionEntity;

@@ -41,9 +41,19 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
+        http.authorizeRequests()
+                .antMatchers("/").permitAll()
+                .antMatchers("/h2-console/**").permitAll();
+
+        http.csrf().disable();
+        http.headers().frameOptions().disable();
+
+
+        /*http
                 .csrf().disable()
+
                 .authorizeRequests()
+                .antMatchers("/h2-console/**").permitAll()
                 .antMatchers("/","/index","/webpublico").permitAll()
                 .antMatchers("/webprivado").authenticated()
                 .antMatchers("/webadmin").hasRole("ADMIN").and()
@@ -52,7 +62,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .and()
                 .logout() // Metodo get pues he desabilitado CSRF
-                .permitAll();
+                .permitAll();*/
     }
 
 }

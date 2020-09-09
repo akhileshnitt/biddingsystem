@@ -39,11 +39,23 @@ public class AuctionController  extends ResourceServerCustomConfiguration {
 
     }
 
+
+
+    public ResponseEntity<List<AuctionDTO>> defaultAuctions(@RequestParam(defaultValue = "0") Integer pageNo,
+                                                     @RequestParam(defaultValue = "2") Integer pageSize,
+                                                     @RequestParam(defaultValue = "baseprice") String sortBy) {
+
+        return new ResponseEntity<>(null,
+                new HttpHeaders(), HttpStatus.OK);
+    }
+
+    //@HystrixCommand(fallbackMethod = "defaultAuctions")
     @GetMapping("/auctions")
     public ResponseEntity<List<AuctionDTO>> auctions(@RequestParam(defaultValue = "0") Integer pageNo,
                                                      @RequestParam(defaultValue = "2") Integer pageSize,
                                                      @RequestParam(defaultValue = "baseprice") String sortBy) {
         List<AuctionDTO> aunctions = auctionService.retrieveAllAuctions(AuctionStatus.RUNNING, pageNo, pageSize, sortBy);
+
         return new ResponseEntity<>(aunctions,
                 new HttpHeaders(), HttpStatus.OK);
     }
